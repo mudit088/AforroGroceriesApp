@@ -3,12 +3,12 @@ import { StyleSheet, Text, View, ScrollView, Image, TextInput, TouchableOpacity,
 import { Ionicons } from '@expo/vector-icons';
 
 export default function App() {
-  const [searchQuery, setSearchQuery] = useState(''); // State to manage search input
-  const [locationModalVisible, setLocationModalVisible] = useState(false); // State for managing location modal
-  const [currentLocation, setCurrentLocation] = useState('New York, USA'); // State for current location
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // State to manage authentication
-  const [authModalVisible, setAuthModalVisible] = useState(false); // State for showing sign-in/sign-out modal
-  const [username, setUsername] = useState(''); // Username input for signing in
+  const [searchQuery, setSearchQuery] = useState(''); 
+  const [locationModalVisible, setLocationModalVisible] = useState(false); 
+  const [currentLocation, setCurrentLocation] = useState('New York, USA'); 
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
+  const [authModalVisible, setAuthModalVisible] = useState(false);
+  const [username, setUsername] = useState(''); 
 
   // Sample data for popular items
   const popularItems = [
@@ -202,18 +202,17 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center', // Aligns items vertically in the center
+    alignItems: 'center', 
     paddingHorizontal: 20,
-    paddingVertical: 10, // Adds vertical padding
-    backgroundColor: '#fff', // Optional: adds background color
-    elevation: 2, // Optional: adds shadow for Android
-    shadowColor: '#000', // Optional: shadow for iOS
-    shadowOpacity: 0.1, // Optional: shadow for iOS
-    shadowOffset: { width: 0, height: 2 }, // Optional: shadow for iOS
-    shadowRadius: 4, // Optional: shadow for iOS
+    paddingVertical: 10,
+    backgroundColor: '#fff',
+    elevation: 2,
+    shadowColor: '#000', 
+    shadowOpacity: 0.1, 
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4, 
   },
   locationContainer: {
-    flexDirection: 'column', // Aligns texts vertically
   },
   locationText: {
     fontSize: 14,
@@ -222,12 +221,12 @@ const styles = StyleSheet.create({
   locationCity: {
     fontSize: 16,
     fontWeight: 'bold',
-    marginTop: 5, // Adds space between location text and city
+    marginTop: 5, 
   },
   profileIcon: {
     width: 40,
     height: 40,
-    borderRadius: 20, // Makes the profile icon circular
+    borderRadius: 20, 
   },
   container: { flex: 1, backgroundColor: '#f5f5f5', paddingTop: 50 },
   header: { flexDirection: 'row', justifyContent: 'space-between', paddingHorizontal: 20, alignItems: 'center' },
